@@ -169,7 +169,7 @@ sudo apt install git
    http://localhost:8000
    ```
 
-You should see: **"Hello, World! Welcome to my Azure App Service application!"**
+You should see: **"Hello, World! Welcome to my Application on Containers"**
 
 ---
 

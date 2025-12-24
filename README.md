@@ -9,6 +9,111 @@ Perfect for learning containerization and Azure deployment! 🚀
 
 ---
 
+## � Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+### 1. Python 3.11+
+
+**Windows:**
+- Download from: https://www.python.org/downloads/
+- During installation, check ✅ "Add Python to PATH"
+- Verify: `python --version`
+
+**macOS:**
+```bash
+brew install python@3.11
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update
+sudo apt install python3.11 python3-pip
+```
+
+---
+
+### 2. Docker Desktop
+
+Docker Desktop allows you to build and run containers locally.
+
+**Windows:**
+1. Download Docker Desktop: https://www.docker.com/products/docker-desktop/
+2. Run the installer
+3. Restart your computer if prompted
+4. Open Docker Desktop and complete the setup
+5. Verify installation:
+   ```bash
+   docker --version
+   ```
+
+**macOS:**
+1. Download Docker Desktop: https://www.docker.com/products/docker-desktop/
+2. Drag Docker to Applications folder
+3. Open Docker from Applications
+4. Verify: `docker --version`
+
+**Linux:**
+```bash
+# Install Docker Engine
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Add your user to docker group (logout/login required)
+sudo usermod -aG docker $USER
+```
+
+> **Note:** On Windows, ensure WSL 2 is enabled. Docker Desktop will prompt you to install it if needed.
+
+---
+
+### 3. Azure CLI
+
+Azure CLI is required to deploy to Azure services.
+
+**Windows:**
+1. Download MSI installer: https://aka.ms/installazurecliwindows
+2. Run the installer and follow the prompts
+3. Open a new terminal and verify:
+   ```bash
+   az --version
+   ```
+
+**macOS:**
+```bash
+brew install azure-cli
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+
+**Verify Azure CLI Installation:**
+```bash
+az --version
+az login  # This will open browser for authentication
+```
+
+---
+
+### 4. Git (Optional but Recommended)
+
+**Windows:**
+- Download from: https://git-scm.com/download/win
+
+**macOS:**
+```bash
+brew install git
+```
+
+**Linux:**
+```bash
+sudo apt install git
+```
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -23,10 +128,6 @@ Perfect for learning containerization and Azure deployment! 🚀
 ---
 
 ## 🏃 Option 1: Run Locally with Python
-
-### Prerequisites
-- Python 3.11+ installed
-- pip (Python package manager)
 
 ### Steps
 
